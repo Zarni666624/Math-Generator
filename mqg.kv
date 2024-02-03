@@ -1,0 +1,70 @@
+Interface:
+    orientation: "vertical"
+    BoxLayout:
+        size_hint_y:0.1
+        Label:
+            text: "Lvl1"
+        Button:
+            text:"+"
+            on_press: root.addition1()
+        Button:
+            text:"-"
+            on_press: root.subtraction1()
+        Button:
+            text: "*"
+            on_press: root.multiplication1()
+        Button:
+            text: "/"
+            on_press: root.division1()
+    BoxLayout:
+        size_hint_y:0.1
+        Label:
+            text: "Lvl2"
+        Button:
+            text:"+"
+            on_press: root.addition2()
+        Button:
+            text:"-"
+            on_press: root.subtraction2()
+        Button:
+            text: "*"
+            on_press: root.multiplication2()
+        Button:
+            text: "/"
+            on_press: root.division2()
+    BoxLayout:
+        size_hint_y:0.1
+        Label:
+            text: "Lvl3"
+        Button:
+            text:"+"
+            on_press: root.addition3()
+        Button:
+            text:"-"
+            on_press: root.subtraction3()
+        Button:
+            text: "*"
+            on_press: root.multiplication3()
+        Button:
+            text: "/"
+            on_press: root.division3()
+    BoxLayout:
+        size_hint_y:0.35
+        Label:
+            text:""
+            id:label1
+            font_size: '40sp'
+        Label:
+            id:label2
+            text:""
+            font_size: '40sp'
+        Label:
+            id:label3
+            text:""
+            font_size: '40sp'
+    TextInput:
+        id: textInput
+        size_hint_y:0.35
+        hint_text:"Answer:"
+        multiline: False
+        on_text_validate: root.check()
